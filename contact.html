@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Fukada Maki</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', 'Yu Gothic', sans-serif;
+      font-weight: 300;
+      margin: 0;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.95rem;
+      position: relative;
+      padding-bottom: 2px;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #444;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .social-icons {
+      display: none;
+    }
+
+    main {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .contact-list {
+      margin-top: 20px;
+      font-size: 0.95rem;
+    }
+
+    .contact-list li {
+      margin-bottom: 10px;
+    }
+
+    .contact-list a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fukada Maki</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+    <p>
+      現在転職活動中につき、ポートフォリオをご覧いただきありがとうございます。<br>
+      ご興味をお持ちいただけましたら、下記のメールアドレスまでご連絡いただけますと幸いです。
+    </p>
+
+    <ul class="contact-list">
+      <li><i class="fa-regular fa-envelope"></i> メール: <a href="mailto:fukada0709@gmail.com">fukada0709@gmail.com</a></li>
+    </ul>
+  </main>
+</body>
+</html>
