@@ -3,13 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>まきのポートフォリオ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: sans-serif; padding: 2em; }
-    h1 { color: #5A4FCF; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .social-icons a {
+      margin-left: 15px;
+      color: #333;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 <body>
-  <h1>まきのポートフォリオへようこそ🌸</h1>
-  <p>ここに作品を追加していこう！</p>
+  <header>
+    <div class="logo">まきのポートフォリオへようこそ🌸</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <a href="https://instagram.com/あなたのアカウント" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!-- 他のSNSもここに追加できるよ -->
+    </div>
+  </header>
+
+  <main style="padding: 2em;">
+    <section id="about">
+      <h2>About</h2>
+      <p>ここに自己紹介を書こう！</p>
+    </section>
+    <section id="works">
+      <h2>Works</h2>
+      <p>作品紹介コーナー✨</p>
+    </section>
+    <section id="blog">
+      <h2>Blog</h2>
+      <p>ブログはここから更新してね✍️</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>連絡先やフォームの予定地📩</p>
+    </section>
+  </main>
 </body>
 </html>
